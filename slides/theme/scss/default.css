@@ -1,0 +1,72 @@
+/*
+Syntax error: File to import not found or unreadable: compass/reset.
+              Load paths:
+                /home/arjan/Documents/MiracleThings/151 HKU/slides/theme
+                /home/arjan/Documents/MiracleThings/151 HKU/slides/theme/scss
+                /home/arjan/Documents/MiracleThings/151 HKU/slides/theme/css
+        on line 1 of scss/_base.scss
+        from line 1 of scss/default.scss
+
+1: @import "base";
+2: @import "compass/css3/columns";
+3: @import "compass/css3/user-interface";
+4: 
+5: $footer-text: 'Thinking of Development, semester II — 2012/2013';
+6: $brand-small-icon-size: 30px;
+
+Backtrace:
+scss/_base.scss:1
+scss/default.scss:1
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/import_node.rb:64:in `rescue in import'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/import_node.rb:42:in `import'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/import_node.rb:25:in `imported_file'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:149:in `rescue in visit_import'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:154:in `visit_import'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:146:in `block in visit_import'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:146:in `map'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:146:in `visit_import'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `map'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/base.rb:37:in `visit'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/tree/root_node.rb:20:in `render'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/engine.rb:299:in `_render'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/engine.rb:246:in `render'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:332:in `update_stylesheet'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:201:in `each'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/compiler.rb:291:in `block (3 levels) in watch'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:51:in `call'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:51:in `block in file_event_fn'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `[]'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `block in run_events'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `each'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:57:in `run_events'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:38:in `block (3 levels) in start!'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:36:in `each'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:36:in `block (2 levels) in start!'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:35:in `each'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/lib/sass/plugin/listener.rb:35:in `block in start!'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/vendor/listen/lib/listen/multi_listener.rb:86:in `call'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/vendor/listen/lib/listen/multi_listener.rb:86:in `on_change'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/vendor/listen/lib/listen/multi_listener.rb:95:in `block in initialize_adapter'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/vendor/listen/lib/listen/adapters/polling.rb:55:in `call'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/vendor/listen/lib/listen/adapters/polling.rb:55:in `poll'
+/home/arjan/.rvm/gems/ruby-1.9.3-p194/gems/sass-3.1.16/vendor/listen/lib/listen/adapters/polling.rb:31:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: compass/reset.\A               Load paths:\A                 /home/arjan/Documents/MiracleThings/151 HKU/slides/theme\A                 /home/arjan/Documents/MiracleThings/151 HKU/slides/theme/scss\A                 /home/arjan/Documents/MiracleThings/151 HKU/slides/theme/css\A         on line 1 of scss/_base.scss\A         from line 1 of scss/default.scss\A \A 1: @import \"base\";\A 2: @import \"compass/css3/columns\";\A 3: @import \"compass/css3/user-interface\";\A 4: \A 5: $footer-text: 'Thinking of Development, semester II — 2012/2013';\A 6: $brand-small-icon-size: 30px;"; }

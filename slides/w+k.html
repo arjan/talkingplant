@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wieden+Kennedy Arduino Workshop 2013</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank">
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="">
+
+ <slide class="title-slide">
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2>Arjan Scherpenisse for Wieden+Kennedy</h2>
+    <p data-config-presenter><!-- populated from slide_config.json --></p></hgroup>
+ </slide>
+ 
+ <slide>
+     <hgroup>
+         <h2>Agenda for tonight</h2>
+     </hgroup>
+     <article class='larger'>
+
+         <ul>
+             <li>Some of my projects</li>
+             <li>Physical Computing - theory</li>
+             <li>The Arduino
+             <ul>
+                 <li>hardware / electronics</li>
+                 <li>programming</li>
+             </ul>
+             </li>
+             <li>Hands on: get those plants talking!</li>
+         </ul>
+
+         <p style="font-size: 1em">Plus a pizza-break around dinner time..</p>
+     </article>
+ </slide>
+
+ <slide class="nobackground">
+     <article>
+         <iframe width="780" height="439" src="http://www.youtube.com/embed/xu2G7e-V7ak" frameborder="0" allowfullscreen></iframe>
+         <p><a href="http://miraclethings.nl/project/852/multi-threaded-banjo-dinosaur-knitting-adventure-2d-extreme">Multi-threaded banjo dinosaur knitting adventure 2d extreme!!!</a></p>
+     </article>
+ </slide>
+
+ <slide class="nobackground">
+     <hgroup>
+         <h3>TinyVGA: Custom VGA controller</h3>
+     </hgroup>         
+     <article>
+         <img src="images/vga.jpg" width="740" />
+     </article>
+ </slide>
+
+ <slide class="nobackground">
+     <article>
+         <iframe src="http://player.vimeo.com/video/14987161" width="780" height="519" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/14987161">IkPod demonstration</a> from <a href="http://vimeo.com/mediamaticlab">Mediamatic Lab</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+     </article>
+ </slide>
+
+ <slide class="title-slide">
+     <hgroup>
+         <h1>Physical Computing</h1>
+     </hgroup>
+ </slide>
+
+ <slide>
+      <article>
+          <a href="http://www.amazon.com/Making-Things-Talk-Practical-Connecting/dp/0596510519"><img src="images/7/makingthingstalk.jpg" class='centered' /></a>
+      </article>
+ </slide>     
+ 
+ <slide>
+     <article class="larger">
+          <img src="images/worlddevice1.png" class="centered" />
+     </article>
+ </slide>
+
+ <slide>
+     <article class="larger">
+          <img src="images/worlddevice2.png" class="centered" />
+     </article>
+ </slide>
+
+ <slide>
+     <article class="larger">
+          <img src="images/worlddevice3.png" class="centered" />
+     </article>
+ </slide>
+
+ <slide>
+     <article class="larger">
+          <img src="images/worlddevice4.png" class="centered" />
+     </article>
+ </slide>
+
+ <slide class="nobackground">
+     <hgroup><h2>Microcontrollers</h2></hgroup>
+     <article>
+         <p>
+             <img src="images/7/micro.jpg" />
+         </p>
+     </article>
+ </slide>
+
+ <slide>
+     <hgroup><h2>Microcontrollers</h2></hgroup>
+      <article>
+          <ul class='build'>
+              <li>It's just a small computer</li>
+              <li>You can program it: tell it what to do</li>
+              <div>
+                  <img src="images/7/micro2.jpg" />
+              </div>
+              <li>Those pins connect it to the world</li>
+              <li>INPUTS en OUTPUTS</li>
+              <li>OUTPUT: "Turn on the light!"</li>
+              <li>INPUT: "Is the light on?</li>
+          </ul>
+      </article>
+ </slide>
+ 
+ <slide>
+     <hgroup><h2>The Arduino</h2></hgroup>
+      <article>
+          <img src="images/7/uno.png" />
+          <ul>
+              <li>It's just a microcontroller</li>
+              <li>Soldered on a board, to make it easy</li>
+              <li>You <em>program</em> it on the computer, then <em>upload</em> it to the arduino</li>
+          </ul>
+      </article>
+      <aside class="note">
+          <section>
+              <p><a href="http://topdocumentaryfilms.com/arduino/">
+                  Arduino documentaire
+              </a></p>
+              <p>…over de totstandkoming van de Arduino</p>
+          </section>
+      </aside>
+ </slide>     
+
+ <slide class="fill" style="background-image: url(images/7/comp.jpg)">
+     <aside class="note">
+         <section>
+             <h3>Electronic components</h3>
+             <ul>
+                 <li><b>Power sources</b>: batteries, adapters</li>
+                 <li><b>Resistors</b>: reduce current</li>
+                 <li><b>LED</b>s (Light Emitting Diode): common light source</li>
+                 <li><b>Transistors</b> en <b>Relais</b>: programmable switches</li>
+                 <li><b>IC's</b> (Integrated Circuits): combining an entire circuit in a single package</li>
+                 <li>Capacitors, crystals, voltage regulators... <small>There's a lot of stuff..</small></li>
+             </ul>
+         </section>
+     </aside>
+ </slide>
+ 
+ <slide>
+     <hgroup><h2>Working with Arduino: hardware…</h2></hgroup>
+     <article>
+         <p>
+             <img src="images/7/bread.jpg" width="780" />
+         </p>
+     </article>
+ </slide>
+
+  <slide class="nobackground">
+     <hgroup><h2>Working with Arduino: … and software</h2></hgroup>
+     <article>
+         <p>
+             <img src="images/7/ui.png"  />
+         </p>
+     </article>
+ </slide>
+
+ <slide>
+       <article>
+          <h3>Het elektronica ontwikkelproces</h3>
+          <p><img src="images/7/f.jpg"/></p>
+          <ul>
+              <li><em>Breadboard</em>: voor het maken van een prototype</li>
+              <li><em>Elektronisch schema</em>: Voor documentatie en PCB ontwikkeling</li>
+              <li><em>PCB (Printed Circuit Board)</em>: In productie brengen van je project</li>
+              <li><a href="http://fritzing.org/">Fritzing</a> ondersteunt in het hele ontwikkeltraject</li>
+              <li>En verheldert de relatie tussen Breadboard, schema en PCB</li>
+          </ul>
+      </article>
+ </slide>
+ 
+ <slide class="dark">
+     <hgroup><h2>Live prototyping demo time!</h2></hgroup>
+     <article>
+         <ul>
+             <li>Knipperend lampje (LED)</li>
+             <li>Drukknop (push button)</li>
+             <li>Communicatie met computer (Processing)</li>
+         </ul>
+      </article>
+ </slide>     
+
+
+ <slide class="nobackground">
+     <hgroup><h2>Blinking LED</h2></hgroup>
+     <article>
+         <p>
+             <img src="images/7/blink.png" />
+         </p>
+     </article>
+ </slide>
+ 
+ <slide class="nobackground">
+     <hgroup><h2>Push-button</h2></hgroup>
+     <article>
+         <p>
+             <img src="images/7/button.png" />
+         </p>
+     </article>
+ </slide>
+
+ <slide>
+     <hgroup><h2>Handige links</h2></hgroup>
+     <article>
+         <h3>Arduino gebruiken</h3>
+         <ul>
+             <li>
+                 <a href="http://arduino.cc/">Arduino</a>,
+                 <a href="http://processing.org/">Processing</a>
+             </li>
+             <li>
+                 <a href="http://playground.arduino.cc/interfacing/processing">
+                     Arduino laten praten met Processing
+                 </a>
+             </li>
+             <li>
+                 <a href="https://code.google.com/p/unity-arduino-serial-connection/wiki/Dutch_step_by_step_guide">
+                     Arduino laten praten met Unity (NL)
+                 </a>
+             </li>             
+         </ul>
+
+         <h3>Elektronica</h3>
+         <ul>
+             <li><a href="http://fritzing.org/">Fritzing</a></li>
+             <li><a href="http://www.breem.nl/fldbasis/pgbasis-01.htm">basis elektronica uitleg</a></li>
+             <li><a href="http://www.falstad.com/circuit/">Circuit simulator</a></li>
+         </ul>
+         
+         <h3>Arduino kopen</h3>
+         <ul>
+             <li><a href="http://www.pieterfloris.nl/shop/">floris.cc</a>, <a href="http://www.duinos.nl/">Duinos</a>, <a href="http://www.antratek.nl/">Antratek</a> (allen in NL)</li>
+             <li><a href="http://www.sparkfun.com/">Sparkfun</a> (US, heeft echt alles)</li>
+         </ul>
+             
+      </article>
+ </slide>     
+ 
+ <slide class="fill nobackground" style="background-image: url(images/7/hal.jpg)">
+     <aside class="note">
+         <section>
+             <a href="http://www.imdb.com/title/tt0062622/">2001: A space oddyssey</a><br/>
+             Ken je klassiekers! :-)
+         </section>
+     </aside>
+ </slide>
+ 
+ <slide>
+      <hgroup><h2>That's all, folks!</h2></hgroup>
+      <article>
+          <p><img src="images/7/nn.png"/></p>
+          <p>Volgende college: donderdag 16 mei 2013, 15:10</p>
+      </article>
+  </slide>      
+
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+</body>
+</html>
