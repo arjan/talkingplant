@@ -182,30 +182,46 @@
  </slide>
 
  <slide>
-       <article>
-          <h3>Het elektronica ontwikkelproces</h3>
-          <p><img src="images/7/f.jpg"/></p>
-          <ul>
-              <li><em>Breadboard</em>: voor het maken van een prototype</li>
-              <li><em>Elektronisch schema</em>: Voor documentatie en PCB ontwikkeling</li>
-              <li><em>PCB (Printed Circuit Board)</em>: In productie brengen van je project</li>
-              <li><a href="http://fritzing.org/">Fritzing</a> ondersteunt in het hele ontwikkeltraject</li>
-              <li>En verheldert de relatie tussen Breadboard, schema en PCB</li>
+     <hgroup>
+         <h2>Arduino's inputs en outputs</h2>
+     </hgroup>
+     <article>
+         <ul class='build'>
+             <li><b>Digital inputs</b> (pins 0-13) measure thruth values; <br/>(true/false, HIGH/LOW). 0V = false, +5V = true</li>
+             <li><b>Analog inputs</b> (pins A0-A5) measure between 0 nad 1024, van 0V tot +5V.</li>
+             <li><b>Digital outputs</b> (pins 0-13) have +5V as "true" (HIGH), 0V as "false" (LOW)</li>
+             <li><b>Analog outputs</b> not possible directly; arduino (pins 3, 5, 6, 9, 10, 11) uses "pulse width modulation" as simulation.</li>
+         </ul>
+     </article>
+ </slide>
+
+ <slide>
+     <hgroup>
+         <h2>Electronics is like water</h2>
+     </hgroup>
+      
+      <article>
+          <ul class='build'>
+              <li>Devices, sensors and actuators all user power</li>
+              <li><img src="images/7/water.gif"/></li>
+              <li>Tap: <em>resistance</em> (Ohm)</li>
+              <li>Water pressure: <em>voltage</em> (Volt)</li>
+              <li>Water current: <em>current</em> (Ampère)</li>
+              <li><a href="http://www.breem.nl/fldbasis/pgbasis-01.htm">Basic electronics 101</a></li>
           </ul>
       </article>
  </slide>
  
  <slide class="dark">
-     <hgroup><h2>Live prototyping demo time!</h2></hgroup>
+     <hgroup><h2>Go go gadget flow!</h2></hgroup>
      <article>
+         <p>Let's install the software and do some basic circuits</p>
          <ul>
-             <li>Knipperend lampje (LED)</li>
-             <li>Drukknop (push button)</li>
-             <li>Communicatie met computer (Processing)</li>
+             <li>Blinking LED</li>
+             <li>Push button</li>
          </ul>
       </article>
  </slide>     
-
 
  <slide class="nobackground">
      <hgroup><h2>Blinking LED</h2></hgroup>
@@ -225,10 +241,48 @@
      </article>
  </slide>
 
+  <slide class="dark">
+     <hgroup><h2>The Talking Plant</h2></hgroup>
+     <article class="larger">
+         <ul>
+             <li>The circuit</li>
+             <li>Arduino software</li>
+             <li>Processing software</li>
+         </ul>
+      </article>
+ </slide>     
+
  <slide>
-     <hgroup><h2>Handige links</h2></hgroup>
+     <hgroup>
+         <h2>Overview diagram</h2>
+     </hgroup>
+ </slide>
+
+ 
+ <slide>
+     <hgroup>
+         <h2>Step 1: the circuit</h2>
+     </hgroup>
+ </slide>
+
+ <slide>
+     <hgroup>
+         <h2>Step 2: arduino software</h2>
+     </hgroup>
+ </slide>
+
+ <slide>
+     <hgroup>
+         <h2>Step 3: processing software</h2>
+     </hgroup>
+ </slide>
+
+
+
+ <slide>
+     <hgroup><h2>Useful links</h2></hgroup>
      <article>
-         <h3>Arduino gebruiken</h3>
+         <h3>Using the Arduino</h3>
          <ul>
              <li>
                  <a href="http://arduino.cc/">Arduino</a>,
@@ -236,49 +290,23 @@
              </li>
              <li>
                  <a href="http://playground.arduino.cc/interfacing/processing">
-                     Arduino laten praten met Processing
+                     Arduino interfacing with Processing
                  </a>
              </li>
-             <li>
-                 <a href="https://code.google.com/p/unity-arduino-serial-connection/wiki/Dutch_step_by_step_guide">
-                     Arduino laten praten met Unity (NL)
-                 </a>
-             </li>             
          </ul>
-
-         <h3>Elektronica</h3>
+         <h3>Elektronics</h3>
          <ul>
              <li><a href="http://fritzing.org/">Fritzing</a></li>
-             <li><a href="http://www.breem.nl/fldbasis/pgbasis-01.htm">basis elektronica uitleg</a></li>
+             <li><a href="http://www.breem.nl/fldbasis/pgbasis-01.htm">Basic electronics tutorial</a></li>
              <li><a href="http://www.falstad.com/circuit/">Circuit simulator</a></li>
          </ul>
-         
-         <h3>Arduino kopen</h3>
-         <ul>
-             <li><a href="http://www.pieterfloris.nl/shop/">floris.cc</a>, <a href="http://www.duinos.nl/">Duinos</a>, <a href="http://www.antratek.nl/">Antratek</a> (allen in NL)</li>
-             <li><a href="http://www.sparkfun.com/">Sparkfun</a> (US, heeft echt alles)</li>
-         </ul>
-             
       </article>
  </slide>     
- 
- <slide class="fill nobackground" style="background-image: url(images/7/hal.jpg)">
-     <aside class="note">
-         <section>
-             <a href="http://www.imdb.com/title/tt0062622/">2001: A space oddyssey</a><br/>
-             Ken je klassiekers! :-)
-         </section>
-     </aside>
- </slide>
- 
- <slide>
-      <hgroup><h2>That's all, folks!</h2></hgroup>
-      <article>
-          <p><img src="images/7/nn.png"/></p>
-          <p>Volgende college: donderdag 16 mei 2013, 15:10</p>
-      </article>
-  </slide>      
 
+
+  
+
+  
 
   <slide class="backdrop"></slide>
 
