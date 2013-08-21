@@ -1,23 +1,44 @@
-Twitter twitter;
+
 
 void setup() {
-  ConfigurationBuilder cb = new ConfigurationBuilder();
-  cb.setOAuthConsumerKey("5z9hn5jZgvcoqOTKNJQAA");
-  cb.setOAuthConsumerSecret("F9TuU09GLwvQS7AntSlb0GWzqC3hD3mrUSLodNtaBjs");
-  cb.setOAuthAccessToken("92106926-O6hwvnniZBqJ41d7E4RVHEFwQcKOlwvqyWb996YuA");
-  cb.setOAuthAccessTokenSecret("uuxIDE7jqSOfxpqJGy3HcxKjDxxcejqgtGUHWDgt00");
-   
-  twitter = new TwitterFactory(cb.build()).getInstance();
   
-  try {
-  twitter.updateStatus(new StatusUpdate("Haaai ik moet water"));
-  } catch (Exception e) {
-    println("sorry something went wrong " + e.toString());
-  } 
+  // Set the screen size.
+  size(640, 480);
+  
+  // This sets up the connection to Twitter. See the twitter_setup.pde file
+  setupTwitter();
+  
+  // Setup the sensor communication
+  setupSensor();
 }
 
-void loop() {
-  println("Hello");
+
+// This function gets called all the time
+void draw() {
+  getSensorValue();
+  String health = calculateHealth(sensorValue);
   
+  background(0);
+  if (health.equals("dry")) 
+    fill(255,0,0); // red
+  if (health.equals("medium")) 
+    fill(255,168,0); // orange
+  if (health.equals("moist")) 
+    fill(0,255,0); // green
+  if (health.equals("drowning")) 
+    fill(255,255,0); // yellow
+  clear();
+  textSize(40);
+  
+  considerTweeting(health);
+  
+  text("Plant value: " + sensorValue  + "\n" + 
+        "Health: " + health, 60, 120);
+
+  fill(128,128,128); // gray  
+  textSize(20);      
+  if (lastTweetText != null) {
+        text(lastTweetText + "\n" + "Posted " + getLastTweetInSeconds() + " seconds ago.", 60, 240);
+  }
 }
 
