@@ -2,6 +2,10 @@ import java.util.*;
 
 static Map tweets = new HashMap<String, String[]>();
 
+// This bit of code are a list of tweets which will get tweeted. They are randomized, but based on the
+// health of the plant. So for each plant health level (there are four, remember), we choose one of the
+// pre-composed tweets.
+
 static {
   tweets.put("dry", new String[]{
     "Hey dude, give me some water!!", 
@@ -21,6 +25,8 @@ static {
     "Hopefully I'll dry up a bit soon, otherwise my roots will start to rot..!"});
 }
 
+// This function returns a random tweet from the list of tweets above, depending
+// on the health of the plant.
 String getRandomTweet(String health) {
   String[] strings = (String[])tweets.get(health);
   int index = int(random(strings.length));

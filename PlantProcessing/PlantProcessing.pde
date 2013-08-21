@@ -1,5 +1,5 @@
 
-
+// This function gets called once, at the start of the program.
 void setup() {
   
   // Set the screen size.

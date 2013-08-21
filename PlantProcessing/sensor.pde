@@ -1,16 +1,15 @@
 import processing.serial.*;
 Serial port;
 
+// This function opens our serial port. 
 void setupSensor() {
-  // Open our serial port. Change the "portName" variable to the name of your serial port. 
+  // IMPORTANT: Change the "portName" variable to the name of your serial port.
   String portName = "/dev/ttyACM0";
   port = new Serial(this, portName, 19200);
 }
 
 
-/*
- * This function reads the sensor value from the arduino. 
- */
+// This function reads the sensor value from the arduino. 
 int sensorValue = -1;
 boolean getSensorValue() {
   boolean reading = false;
@@ -28,10 +27,10 @@ boolean getSensorValue() {
   return reading;
 }
 
-/**
- * This function is the calibration of our plant logic.
- * We have 4 states depending on the moisture level; from "drowning" to "dry".
- */
+//
+// This function is the calibration of our plant logic.
+// We have 4 states depending on the moisture level; from "drowning" to "dry".
+// The value from the sensor gets converted in one of these strings.
 String calculateHealth(int value) {
   if (value > 700)
     return "drowning";
@@ -40,5 +39,6 @@ String calculateHealth(int value) {
   if (value > 300)
     return "medium";
     
+  // 300 or less
   return "dry";    
 }
