@@ -40,5 +40,8 @@ void draw() {
   if (lastTweetText != null) {
         text(lastTweetText + "\n" + "Posted " + getLastTweetInSeconds() + " seconds ago.", 60, 240);
   }
+  
+  text("Next tweet in " + getNextTweetInSeconds(health) + " seconds.", 60, 340);
+  
 }
 

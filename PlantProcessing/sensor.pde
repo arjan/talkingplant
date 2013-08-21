@@ -20,7 +20,7 @@ boolean getSensorValue() {
       String[] list = split(line, ':');
       if (list[0].equals("SENSOR")) {
         sensorValue = int(list[1].trim());
-        println("Sensor reading: " + sensorValue);
+        //println("Sensor reading: " + sensorValue);
         reading = true;
       }
     }
