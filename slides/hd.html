@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wieden+Kennedy Arduino Workshop 2013</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="stylesheet" media="all" href="theme/css/default.css">
+  <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="theme/css/phone.css">
+  <base target="_blank">
+  <script data-main="js/slides" src="js/require-1.0.8.min.js"></script>
+</head>
+<body style="opacity: 0">
+
+<slides class="">
+
+ <slide class="title-slide">
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2>Hackers and Designers, august 2013</h2>
+    <p data-config-presenter><!-- populated from slide_config.json --></p></hgroup>
+ </slide>
+ 
+ <slide>
+     <hgroup>
+         <h2>Agenda for tonight</h2>
+     </hgroup>
+     <article class='larger'>
+
+         <ul>
+             <li>Physical Computing - theory</li>
+             <li>The Arduino
+             <ul>
+                 <li>hardware / electronics</li>
+                 <li>programming</li>
+             </ul>
+             </li>
+             <li>Hands on: get those plants talking!</li>
+         </ul>
+     </article>
+ </slide>
+
+ <slide class="title-slide">
+     <hgroup>
+         <h1>Physical Computing</h1>
+     </hgroup>
+ </slide>
+
+ <slide>
+      <article>
+          <a href="http://www.amazon.com/Making-Things-Talk-Practical-Connecting/dp/0596510519"><img src="images/7/makingthingstalk.jpg" class='centered' /></a>
+      </article>
+ </slide>     
+ 
+ <slide>
+     <article class="larger">
+          <img src="images/worlddevice1.png" class="centered" />
+     </article>
+ </slide>
+
+ <slide>
+     <article class="larger">
+          <img src="images/worlddevice2.png" class="centered" />
+     </article>
+ </slide>
+
+ <slide>
+     <article class="larger">
+          <img src="images/worlddevice3.png" class="centered" />
+     </article>
+ </slide>
+
+ <slide>
+     <article class="larger">
+          <img src="images/worlddevice4.png" class="centered" />
+     </article>
+ </slide>
+
+ <slide class="nobackground">
+     <hgroup><h2>Microcontrollers</h2></hgroup>
+     <article>
+         <p>
+             <img src="images/7/micro.jpg" />
+         </p>
+     </article>
+ </slide>
+
+ <slide>
+     <hgroup><h2>Microcontrollers</h2></hgroup>
+      <article>
+          <ul class='build'>
+              <li>It's just a small computer</li>
+              <li>You can program it: tell it what to do</li>
+              <div>
+                  <img src="images/7/micro2.jpg" />
+              </div>
+              <li>Those pins connect it to the world</li>
+              <li>INPUTS en OUTPUTS</li>
+              <li>OUTPUT: "Turn on the light!"</li>
+              <li>INPUT: "Is the light on?</li>
+          </ul>
+      </article>
+ </slide>
+ 
+ <slide>
+     <hgroup><h2>The Arduino</h2></hgroup>
+      <article>
+          <img src="images/7/uno.png" />
+          <ul>
+              <li>It's just a microcontroller</li>
+              <li>Soldered on a board, to make it easy</li>
+              <li>You <em>program</em> it on the computer, then <em>upload</em> it to the arduino</li>
+          </ul>
+      </article>
+      <aside class="note">
+          <section>
+              <p><a href="http://topdocumentaryfilms.com/arduino/">
+                  Arduino documentaire
+              </a></p>
+              <p>…over de totstandkoming van de Arduino</p>
+          </section>
+      </aside>
+ </slide>     
+
+ <slide class="fill" style="background-image: url(images/7/comp.jpg)">
+     <aside class="note">
+         <section>
+             <h3>Electronic components</h3>
+             <ul>
+                 <li><b>Power sources</b>: batteries, adapters</li>
+                 <li><b>Resistors</b>: reduce current</li>
+                 <li><b>LED</b>s (Light Emitting Diode): common light source</li>
+                 <li><b>Transistors</b> en <b>Relais</b>: programmable switches</li>
+                 <li><b>IC's</b> (Integrated Circuits): combining an entire circuit in a single package</li>
+                 <li>Capacitors, crystals, voltage regulators... <small>There's a lot of stuff..</small></li>
+             </ul>
+         </section>
+     </aside>
+ </slide>
+ 
+ <slide>
+     <hgroup><h2>Working with Arduino: hardware…</h2></hgroup>
+     <article>
+         <p>
+             <img src="images/7/bread.jpg" width="780" />
+         </p>
+     </article>
+ </slide>
+
+  <slide class="nobackground">
+     <hgroup><h2>Working with Arduino: … and software</h2></hgroup>
+     <article>
+         <p>
+             <img src="images/7/ui.png"  />
+         </p>
+     </article>
+ </slide>
+
+ <slide>
+     <hgroup>
+         <h2>Arduino's inputs en outputs</h2>
+     </hgroup>
+     <article>
+         <ul class='build'>
+             <li><b>Digital inputs</b> (pins 0-13) measure thruth values; <br/>(true/false, HIGH/LOW). 0V = false, +5V = true</li>
+             <li><b>Analog inputs</b> (pins A0-A5) measure between 0 nad 1024, van 0V tot +5V.</li>
+             <li><b>Digital outputs</b> (pins 0-13) have +5V as "true" (HIGH), 0V as "false" (LOW)</li>
+             <li><b>Analog outputs</b> not possible directly; arduino (pins 3, 5, 6, 9, 10, 11) uses "pulse width modulation" as simulation.</li>
+         </ul>
+     </article>
+ </slide>
+
+  <slide class="dark">
+     <hgroup><h2>The Talking Plant</h2></hgroup>
+     <article class="larger">
+         <ul>
+             <li>The circuit</li>
+             <li>Arduino software</li>
+             <li>Processing software</li>
+         </ul>
+         <p>All code and software is preinstalled on the laptops on the tables</p>
+      </article>
+ </slide>     
+
+ <slide class="nobackground">
+     <article>
+         <img src="arduino-plant-full.png" height="640" />
+     </article>
+ </slide>
+
+ <slide>
+     <hgroup>
+         <h2>Arduino circuit</h2>
+     </hgroup>
+     <article>
+         <img src="arduino-plant.png" width="740" />
+     </article>
+ </slide>
+
+ <slide class="fill" style="background-image: url(circuit.jpg)">
+     <article>
+     </article>
+ </slide>
+
+ <slide>
+     <hgroup>
+         <h2>Circuit hints</h2>
+     </hgroup>
+     <article class="larger">
+         <ul>
+             <li>It's just three wires!</li>
+             <li>Wire w/o resistor must go in +5V</li>
+             <li>Wire w/ resistor soldered to it goes in A0</li>
+             <li>Other end of resistor goes in GND</li>
+         </ul>
+         <p style="font-size: 1em">(You're building a <em>voltage divider</em> because the arduino can't sense resistance, only voltage)</p>
+             
+     </article>
+ </slide>
+
+
+ <slide>
+     <hgroup><h2>Useful links</h2></hgroup>
+     <article>
+         <h3>Using the Arduino</h3>
+         <ul>
+             <li>
+                 <a href="http://arduino.cc/">Arduino</a>,
+                 <a href="http://processing.org/">Processing</a>
+             </li>
+             <li>
+                 <a href="http://playground.arduino.cc/interfacing/processing">
+                     Arduino interfacing with Processing
+                 </a>
+             </li>
+         </ul>
+         <h3>Elektronics</h3>
+         <ul>
+             <li><a href="http://fritzing.org/">Fritzing</a></li>
+             <li><a href="http://www.breem.nl/fldbasis/pgbasis-01.htm">Basic electronics tutorial</a></li>
+             <li><a href="http://www.falstad.com/circuit/">Circuit simulator</a></li>
+         </ul>
+      </article>
+ </slide>     
+
+
+  
+
+  
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+</body>
+</html>

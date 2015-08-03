@@ -4,7 +4,7 @@ Serial port;
 // This function opens our serial port. 
 void setupSensor() {
   // IMPORTANT: Change the "portName" variable to the name of your serial port.
-  String portName = "/dev/ttyACM0";
+  String portName = "/dev/ttyACM4";
   port = new Serial(this, portName, 19200);
 }
 

@@ -1,0 +1,19 @@
+
+
+
+Applied bio-robotics
+
+In this workshop we will explore connections between the biological
+and digital domains. The teacher will introduce you to basic
+electronics, and helps you building sensors to bridge the
+digital/biological gap.
+
+The base of the course are two sample projects. Students use these
+projects as inspiration and hack away on them, creating variations or
+entirely new installations.
+
+The first project is an installation that connects plants to the
+internet, letting the world know when they are in need of water. The
+other starter project consists of a DIY microscope which enables
+bacteria-driven electronic music.
+

@@ -20,12 +20,12 @@ void loop() {
   digitalWrite(ledPin, HIGH);  
   
   // wait a bit
-  delay(500);          
+  delay(200);          
   
   // turn the ledPin off:        
   digitalWrite(ledPin, LOW);   
   
   // wait a bit
-  delay(500);
+  delay(200);
   
 }
