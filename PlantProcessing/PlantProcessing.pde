@@ -43,6 +43,6 @@ void draw() {
   
   text("Next tweet in " + getNextTweetInSeconds(health) + " seconds.", 60, 340);
   
-  text("http://is.gd/wkarduino", 60, 60);
+  text("http://github.com/arjan/talkingplant", 60, 60);
 }
 
