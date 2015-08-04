@@ -1,6 +1,6 @@
 Twitter twitter;
 
-// This is the twitter setup function. You need to create a twitter app at https://dev.twitter.com/ 
+// This is the twitter setup function. You need to create a twitter app at https://apps.twitter.com/ 
 // and paste your configuration keys in here. You can find those keys on the "OAuth tool" page of your 
 // new Twitter app. Be sure to allow "read and write" permission to the app, otherwise it cannot post messages.
 
