@@ -30,5 +30,5 @@ static {
 String getRandomTweet(String health) {
   String[] strings = (String[])tweets.get(health);
   int index = int(random(strings.length));
-  return strings[index];
+  return strings[index] + " #talkingplant #hdsa2015 @hack1design";
 } 
